@@ -1,0 +1,338 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  width: 44px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #5c1c9c;
+  border-radius: 5px;
+}
+
+/* Landing Section Styles */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img2.webp');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.landing-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.landing-text p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #33867a;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #000000;
+}
+
+/* Animated About Section */
+.about-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hire Me Section */
+.hire-me-section {
+  background-color: #462182;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hire-me-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hire-me-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hire-me-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hire-me-btn {
+  padding: 15px 30px;
+  background-color: white;
+  color: #fc0000;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #5327a4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #000000;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for iOS & Android */
+
+/* Small devices (up to 576px - iPhone 5, SE, Android small phones) */
+@media (max-width: 576px) {
+  .landing-text h1 {
+    font-size: 32px;
+  }
+  
+  .landing-text p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .hire-me-heading {
+    font-size: 28px;
+  }
+
+  .hire-me-description {
+    font-size: 14px;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (up to 768px - iPhone 6, 7, 8, X, Android medium phones) */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 30px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .hire-me-heading {
+    font-size: 30px;
+  }
+
+  .hire-me-description {
+    font-size: 16px;
+  }
+
+  .contact-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 9px;
+  }
+
+  .contact-form button {
+    padding: 9px 18px;
+    font-size: 18px;
+  }
+}
+
+/* Large devices (up to 992px - tablets, larger Android & iPhone Plus) */
+@media (max-width: 992px) {
+  .landing-text h1 {
+    font-size: 40px;
+  }
+
+  .landing-text p {
+    font-size: 22px;
+  }
+
+  .cta-btn {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+
+  .about-heading {
+    font-size: 34px;
+  }
+
+  .about-description {
+    font-size: 17px;
+  }
+
+  .hire-me-heading {
+    font-size: 34px;
+  }
+
+  .hire-me-description {
+    font-size: 17px;
+  }
+
+  .contact-section h2 {
+    font-size: 34px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 9px;
+  }
+
+  .contact-form button {
+    padding: 9px 20px;
+    font-size: 18px;
+  }
+}
